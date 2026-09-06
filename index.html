@@ -27,6 +27,21 @@
 <template id="__bundler_thumbnail" data-bg-color="#0A0A0A">
 <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="400" fill="#0A0A0A"></rect><text x="200" y="240" font-family="Arial" font-size="120" font-weight="900" fill="#FF6700" text-anchor="middle">TBA</text></svg>
 </template>
+<script>
+window.addEventListener('click', function (e) {
+  var b = e.target.closest && e.target.closest('[data-share-btn]');
+  if (!b) return;
+  var url = 'https://alongtalk.github.io/TBA2026/';
+  var data = { title: 'Takeover Basketball Academy 2026', text: 'Take the 1st step to greatness — TBA 2026, Sept 13 to Nov 1.', url: url };
+  if (navigator.share) { navigator.share(data).catch(function(){}); return; }
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(url).then(function () {
+      var prev = b.textContent; b.textContent = 'Link copied';
+      setTimeout(function () { b.textContent = prev; }, 2200);
+    }).catch(function(){});
+  }
+});
+</script>
 <meta property="og:title" content="Takeover Basketball Academy 2026">
 <meta property="og:description" content="30+ hours of skill development, competition, and mentorship for 3rd–6th grade players in the DMV. Sept 13 – Nov 1, 2026.">
 <title>Takeover Basketball Academy 2026</title>
@@ -95,8 +110,8 @@ a{color:#FF6700}a:hover{color:#ff8a3d}
 <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,10,.82) 0%,rgba(10,10,10,.08) 66%,rgba(10,10,10,.42) 100%)"></div>
 <div class="heroc" style="position:relative;padding:0 40px 76px;max-width:880px">
 <div data-rev="" style="display:flex;align-items:center;gap:12px;font-size:11px;font-weight:700;letter-spacing:3.4px;text-transform:uppercase;color:#FF6700;margin-bottom:22px"><span style="width:34px;height:2px;background:#FF6700;display:block"></span>Fall 2026 · 3rd–6th Grade</div>
-<h1 data-rev="" style="font-family:Anton,Impact,sans-serif;font-size:clamp(48px,8.4vw,116px);font-weight:400;line-height:.87;margin:0 0 26px;color:#fff;text-transform:uppercase">Take the 1st step<br>to <span style="color:#FF6700">greatness.</span></h1>
-<p data-rev="" style="font-size:17px;color:#c4c4c4;max-width:540px;line-height:1.65;margin:0 0 20px">{{ spotsLine }}</p>
+<h1 data-rev="" style="font-family:Anton,Impact,sans-serif;font-size:clamp(54px,9.2vw,132px);font-weight:400;line-height:.87;margin:0 0 26px;color:#fff;text-transform:uppercase">Take the 1st step<br>to <span style="color:#FF6700">greatness.</span></h1>
+<p data-rev="" style="font-size:18.5px;color:#c4c4c4;max-width:580px;line-height:1.65;margin:0 0 20px">The pathway to your greatest year of travel basketball begins now. We start with 30 slots per grade level, and we're down to 22 spots by the end of November.</p>
 <p data-rev="" style="font-size:15px;color:#8f8f8f;max-width:540px;line-height:1.65;margin:0 0 36px">30+ hours of skill development, competition, and mentorship. Sept 13 – Nov 1, 2026.</p>
 <div data-rev="" class="cta" style="display:flex;gap:24px;align-items:center">
 <a href="https://go.teamsnap.com/forms/526195" target="_blank" style="display:inline-block;background:#FF6700;color:#0A0A0A;padding:17px 38px;font-family:'Archivo Narrow',Archivo,sans-serif;font-weight:700;font-size:14px;letter-spacing:2px;text-transform:uppercase;text-decoration:none" style-hover="background:#fff">Register — $375</a>
@@ -116,7 +131,7 @@ a{color:#FF6700}a:hover{color:#ff8a3d}
 <div class="pad two" style="padding:92px 40px;display:grid;grid-template-columns:1.05fr .95fr;gap:66px;align-items:start">
 <div>
 <div data-rev="" style="display:flex;align-items:center;gap:12px;font-size:11px;font-weight:700;letter-spacing:3.4px;text-transform:uppercase;color:#FF6700;margin-bottom:18px"><span style="width:34px;height:2px;background:#FF6700;display:block"></span>About the Program</div>
-<h2 data-rev="" style="font-family:Anton,Impact,sans-serif;font-size:clamp(30px,3.6vw,46px);font-weight:400;color:#fff;line-height:1.02;text-transform:uppercase;margin:0 0 26px">Trust the process. Decades of success.</h2>
+<h2 data-rev="" style="font-family:Anton,Impact,sans-serif;font-size:clamp(34px,4.4vw,60px);font-weight:400;color:#fff;line-height:1.02;text-transform:uppercase;margin:0 0 26px">Trust the process. Decades of success.</h2>
 <p data-rev="" style="font-size:15px;color:#adadad;line-height:1.8;margin:0 0 16px">In an effort to continue to provide the best possible basketball development for players in 3rd–6th grade, Team Takeover is setting the pace in grassroots basketball by continuing the Takeover Basketball Academy.</p>
 <p data-rev="" style="font-size:15px;color:#adadad;line-height:1.8;margin:0 0 16px">First launched in 2019, TBA returned in 2023, 2024 &amp; 2025 and delivered an AMAZING experience with over 100 players and families each year. We recognize that the fall "off" season has become a mess — wrought with crazy extra costs, uncertain schedules, and uninspiring competition.</p>
 <p data-rev="" style="font-size:15px;color:#adadad;line-height:1.8;margin:0">The TBA is built to change that. A structured, purposeful fall program that prepares your child for the AAU season ahead — not just gets them through it.</p>
@@ -145,7 +160,7 @@ a{color:#FF6700}a:hover{color:#ff8a3d}
 
 <div class="pad" style="padding:0 40px 92px">
 <div data-rev="" style="display:flex;align-items:center;gap:12px;font-size:11px;font-weight:700;letter-spacing:3.4px;text-transform:uppercase;color:#FF6700;margin-bottom:16px"><span style="width:34px;height:2px;background:#FF6700;display:block"></span>Access</div>
-<h2 data-rev="" style="font-family:Anton,Impact,sans-serif;font-size:clamp(30px,3.6vw,46px);font-weight:400;color:#fff;text-transform:uppercase;line-height:1.02;margin:0 0 20px">Doors the gym alone doesn't open.</h2>
+<h2 data-rev="" style="font-family:Anton,Impact,sans-serif;font-size:clamp(34px,4.4vw,60px);font-weight:400;color:#fff;text-transform:uppercase;line-height:1.02;margin:0 0 20px">Doors the gym alone doesn't open.</h2>
 <p data-rev="" style="font-size:15px;color:#adadad;line-height:1.8;max-width:760px;margin:0 0 40px">TBA runs inside real academic institutions, with the people who make admissions and roster decisions in the room.</p>
 <div class="ben" style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px">
 <div data-rev="" style="background:#121212">
@@ -174,7 +189,7 @@ a{color:#FF6700}a:hover{color:#ff8a3d}
 
 <div class="pad" style="padding:0 40px 92px">
 <div data-rev="" style="display:flex;align-items:center;gap:12px;font-size:11px;font-weight:700;letter-spacing:3.4px;text-transform:uppercase;color:#FF6700;margin-bottom:16px"><span style="width:34px;height:2px;background:#FF6700;display:block"></span>Who Benefits</div>
-<h2 data-rev="" style="font-family:Anton,Impact,sans-serif;font-size:clamp(30px,3.6vw,46px);font-weight:400;color:#fff;text-transform:uppercase;line-height:1.02;margin:0 0 40px">Built for everyone in the TTO family.</h2>
+<h2 data-rev="" style="font-family:Anton,Impact,sans-serif;font-size:clamp(34px,4.4vw,60px);font-weight:400;color:#fff;text-transform:uppercase;line-height:1.02;margin:0 0 40px">Built for everyone in the TTO family.</h2>
 <div class="ben" style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px">
 <div data-rev="" style="background:#121212;padding:28px 24px;border-top:2px solid #FF6700">
 <div style="color:#fff;font-family:'Archivo Narrow',Archivo,sans-serif;font-weight:700;font-size:15px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px">Players</div>
@@ -225,7 +240,7 @@ a{color:#FF6700}a:hover{color:#ff8a3d}
 
 <div class="pad" style="padding:0 40px 92px">
 <div data-rev="" style="display:flex;align-items:center;gap:12px;font-size:11px;font-weight:700;letter-spacing:3.4px;text-transform:uppercase;color:#FF6700;margin-bottom:16px"><span style="width:34px;height:2px;background:#FF6700;display:block"></span>2026 Schedule</div>
-<h2 data-rev="" style="font-family:Anton,Impact,sans-serif;font-size:clamp(30px,3.6vw,46px);font-weight:400;color:#fff;text-transform:uppercase;line-height:1.02;margin:0 0 10px">Sept 13 – Nov 1, 2026</h2>
+<h2 data-rev="" style="font-family:Anton,Impact,sans-serif;font-size:clamp(34px,4.4vw,60px);font-weight:400;color:#fff;text-transform:uppercase;line-height:1.02;margin:0 0 10px">Sept 13 – Nov 1, 2026</h2>
 <p data-rev="" style="font-size:14px;color:#8f8f8f;margin:0 0 40px">All three tracks run in parallel across eight weeks.</p>
 <div class="sched" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:34px">
 
@@ -246,12 +261,10 @@ a{color:#FF6700}a:hover{color:#ff8a3d}
 <div style="display:flex;gap:10px;align-items:baseline"><span style="color:#FF6700;font-size:11px;font-weight:700;letter-spacing:.6px;min-width:78px">10:30 – 11:00</span><span style="color:#8f8f8f;font-size:11px;letter-spacing:1.2px;text-transform:uppercase">Conditioning 4 All</span></div>
 <div style="display:flex;gap:10px;align-items:baseline"><span style="color:#FF6700;font-size:11px;font-weight:700;letter-spacing:.6px;min-width:78px">10:30 – 11:00</span><span style="color:#8f8f8f;font-size:11px;letter-spacing:1.2px;text-transform:uppercase">Campus Tours (Parents)</span></div>
 <div style="display:flex;gap:10px;align-items:baseline"><span style="color:#FF6700;font-size:11px;font-weight:700;letter-spacing:.6px;min-width:78px">11:00 – 1:00</span><span style="color:#8f8f8f;font-size:11px;letter-spacing:1.2px;text-transform:uppercase">Session 2</span></div>
-<sc-if value="{{ showGradeRotation }}" hint-placeholder-val="{{ true }}">
 <div style="margin-top:8px;padding-top:10px;border-top:1px solid rgba(255,255,255,.08);display:flex;flex-direction:column;gap:8px">
 <div><div style="color:#fff;font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:3px">Weeks 1, 3, 5, 7</div><div style="font-size:11.5px;color:#8f8f8f;line-height:1.6">Session 1: 3rd/4th grade &nbsp;·&nbsp; Session 2: 5th/6th grade</div></div>
 <div><div style="color:#fff;font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:3px">Weeks 2, 4, 6, 8</div><div style="font-size:11.5px;color:#8f8f8f;line-height:1.6">Session 1: 5th/6th grade &nbsp;·&nbsp; Session 2: 3rd/4th grade</div></div>
 </div>
-</sc-if>
 </div>
 </div>
 
@@ -281,7 +294,6 @@ a{color:#FF6700}a:hover{color:#ff8a3d}
 </div>
 </div>
 
-<sc-if value="{{ showFlyer }}" hint-placeholder-val="{{ true }}">
 <div class="pad" style="padding:0 40px 96px;background:#0A0A0A">
 <div style="border-top:1px solid rgba(255,255,255,.1);padding-top:56px;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center" class="flyerwrap">
 <a data-rev href="https://alongtalk.github.io/TBA2026/assets/tba-flyer.png" target="_blank" rel="noopener" style="display:block;background:#151515;padding:14px;border:1px solid rgba(255,255,255,.1)">
@@ -289,23 +301,22 @@ a{color:#FF6700}a:hover{color:#ff8a3d}
 </a>
 <div data-rev>
 <div style="display:flex;align-items:center;gap:12px;font-size:11px;font-weight:700;letter-spacing:3.4px;text-transform:uppercase;color:#FF6700;margin-bottom:16px"><span style="width:34px;height:2px;background:#FF6700;display:block"></span>Spread the word</div>
-<h2 style="font-family:Anton,Impact,sans-serif;font-size:clamp(28px,3.2vw,42px);font-weight:400;color:#fff;text-transform:uppercase;line-height:1.04;margin:0 0 14px">Share the flyer.</h2>
+<h2 style="font-family:Anton,Impact,sans-serif;font-size:clamp(32px,4vw,54px);font-weight:400;color:#fff;text-transform:uppercase;line-height:1.04;margin:0 0 14px">Share the flyer.</h2>
 <p style="font-size:14.5px;color:#a8a8a8;margin:0 0 30px;line-height:1.7;max-width:420px">Download the full-resolution flyer or send it straight to a teammate's family. Scan the QR code to register.</p>
 <div style="display:flex;flex-wrap:wrap;gap:12px">
 <a href="https://alongtalk.github.io/TBA2026/assets/tba-flyer.png" download="TBA-2026-Flyer.png" style="background:#FF6700;color:#0A0A0A;font-family:'Archivo Narrow',Archivo,sans-serif;font-weight:700;font-size:13px;letter-spacing:1.6px;text-transform:uppercase;padding:15px 28px;text-decoration:none;display:inline-block" style-hover="background:#ff7d24">Download flyer</a>
-<button onClick="{{ share }}" style="background:transparent;color:#fff;font-family:'Archivo Narrow',Archivo,sans-serif;font-weight:700;font-size:13px;letter-spacing:1.6px;text-transform:uppercase;padding:15px 28px;border:1px solid rgba(255,255,255,.28);cursor:pointer" style-hover="border-color:#FF6700;color:#FF6700">{{ shareLabel }}</button>
+<button type="button" data-share-btn style="background:transparent;color:#fff;font-family:'Archivo Narrow',Archivo,sans-serif;font-weight:700;font-size:13px;letter-spacing:1.6px;text-transform:uppercase;padding:15px 28px;border:1px solid rgba(255,255,255,.28);cursor:pointer" style-hover="border-color:#FF6700;color:#FF6700" data-share-label>Share</button>
 </div>
 </div>
 </div>
 </div>
-</sc-if>
 
 <div style="position:relative;overflow:hidden">
 <img data-photo="" src="assets/tba-kids.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%">
 <div style="position:absolute;inset:0;background:linear-gradient(105deg,rgba(10,10,10,.96) 32%,rgba(10,10,10,.82) 60%,rgba(10,10,10,.6) 100%)"></div>
 <div class="pad" style="position:relative;padding:92px 40px">
 <div data-rev="" style="display:flex;align-items:center;gap:12px;font-size:11px;font-weight:700;letter-spacing:3.4px;text-transform:uppercase;color:#FF6700;margin-bottom:16px"><span style="width:34px;height:2px;background:#FF6700;display:block"></span>Pricing</div>
-<h2 data-rev="" style="font-family:Anton,Impact,sans-serif;font-size:clamp(30px,3.6vw,46px);font-weight:400;color:#fff;text-transform:uppercase;line-height:1.02;margin:0 0 14px">The best value in DMV fall basketball.</h2>
+<h2 data-rev="" style="font-family:Anton,Impact,sans-serif;font-size:clamp(34px,4.4vw,60px);font-weight:400;color:#fff;text-transform:uppercase;line-height:1.02;margin:0 0 14px">The best value in DMV fall basketball.</h2>
 <p data-rev="" style="font-size:14.5px;color:#a8a8a8;margin:0 0 44px;max-width:540px;line-height:1.7">30+ hours of elite training, competition, and development for under $12 an hour. No hidden fees.</p>
 <div class="price" style="display:grid;grid-template-columns:1fr 1fr;gap:2px;max-width:860px">
 <div data-rev="" style="background:#151515;border-top:2px solid #FF6700;padding:34px 30px">
@@ -344,7 +355,7 @@ a{color:#FF6700}a:hover{color:#ff8a3d}
 <div class="pad two" style="padding:92px 40px;display:grid;grid-template-columns:1fr 1fr;gap:66px">
 <div>
 <div data-rev="" style="display:flex;align-items:center;gap:12px;font-size:11px;font-weight:700;letter-spacing:3.4px;text-transform:uppercase;color:#FF6700;margin-bottom:16px"><span style="width:34px;height:2px;background:#FF6700;display:block"></span>Registration</div>
-<h2 data-rev="" style="font-family:Anton,Impact,sans-serif;font-size:clamp(30px,3.6vw,46px);font-weight:400;color:#fff;text-transform:uppercase;line-height:1.02;margin:0 0 24px">Secure your spot for TBA 2026.</h2>
+<h2 data-rev="" style="font-family:Anton,Impact,sans-serif;font-size:clamp(34px,4.4vw,60px);font-weight:400;color:#fff;text-transform:uppercase;line-height:1.02;margin:0 0 24px">Secure your spot for TBA 2026.</h2>
 <p data-rev="" style="font-size:14.5px;color:#a8a8a8;line-height:1.75;margin:0 0 32px">Enrollment is limited to 30 players per grade. Complete the form to register your athlete — payment instructions will follow.</p>
 <div style="display:flex;flex-direction:column;gap:24px">
 <div data-rev="" style="display:flex;gap:18px"><div style="font-family:Anton,Impact,sans-serif;color:#FF6700;font-size:24px;line-height:1;flex-shrink:0">01</div><div><div style="color:#fff;font-weight:700;font-size:15px">Complete the registration form</div><div style="color:#8f8f8f;font-size:13px;margin-top:4px;line-height:1.6">Enter your athlete's info and parent contact details.</div></div></div>
@@ -380,28 +391,8 @@ a{color:#FF6700}a:hover{color:#ff8a3d}
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;showFlyer&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sharing&quot;},&quot;shareUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://alongtalk.github.io/TBA2026/&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Sharing&quot;},&quot;spotsRemaining&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:22,&quot;min&quot;:0,&quot;max&quot;:30,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Enrollment&quot;},&quot;showGradeRotation&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Schedule&quot;}}">
-class Component extends DCLogic {
-  state = { shareLabel: 'Share' };
-  renderVals() {
-    return {
-      shareLabel: this.state.shareLabel,
-      showFlyer: this.props.showFlyer ?? true,
-      showGradeRotation: this.props.showGradeRotation ?? true,
-      spotsLine: "The pathway to your greatest year of travel basketball begins now. We start with 30 slots per grade level, and we're down to " + (this.props.spotsRemaining ?? 22) + " spots by the end of November.",
-      share: async () => {
-        const url = this.props.shareUrl || 'https://alongtalk.github.io/TBA2026/';
-        const data = { title: 'Takeover Basketball Academy 2026', text: 'Take the 1st step to greatness — TBA 2026, Sept 13 to Nov 1.', url };
-        try {
-          if (navigator.share) { await navigator.share(data); return; }
-          await navigator.clipboard.writeText(url);
-          this.setState({ shareLabel: 'Link copied' });
-          setTimeout(() => this.setState({ shareLabel: 'Share' }), 2200);
-        } catch (e) {}
-      }
-    };
-  }
-}
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {}
 </script>
 </body>
 </html>
